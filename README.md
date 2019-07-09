@@ -1,4 +1,4 @@
-# MaxLength
+# MaxLength Attribute for Input field Number.
 JQuery plugin to restrict the input number field to its max length.
 
     (function ($) {
@@ -20,11 +20,13 @@ JQuery plugin to restrict the input number field to its max length.
                         return false;
                     }
                 });
-                $(this).on('paste', function() {
-					return false;
-				});
-				$(this).attr("max",0);
-				$(this).attr("min",0);
+               
+	       $(this).on('paste', function() {
+			return false;
+		});
+		
+		$(this).attr("max",0);
+		$(this).attr("min",0);
             });
         };
     }(jQuery));
