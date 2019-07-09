@@ -25,6 +25,11 @@
                             return false;
                         }
                     });
+                    $(this).on('paste', function () {
+                        return false;
+                    });
+                    $(this).attr("max", 0);
+                    $(this).attr("min", 0);
                 });
             };
         }(jQuery));
@@ -36,6 +41,5 @@
 </head>
 <body>
     <input type="number" class="number" maxlength="5" />
-    <input type="text" class="number" />
 </body>
 </html>
