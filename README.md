@@ -20,6 +20,11 @@ JQuery plugin to restrict the input number field to its max length.
                         return false;
                     }
                 });
+                $(this).on('paste', function() {
+					return false;
+				});
+				$(this).attr("max",0);
+				$(this).attr("min",0);
             });
         };
     }(jQuery));
